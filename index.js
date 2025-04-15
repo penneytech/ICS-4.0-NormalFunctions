@@ -1,10 +1,29 @@
-/*
+let counter = 0;
 
-In this excercise you will make a simple function that increases the numerical value of a variable, 'counter'. 
+// Normal Function
+function processCounter() {
 
-1) Declare a variable called "counter", and set it's initial value to zero.
-2) Create a function called "countUp".
-3) Inside the "countUp" function, increment the 'counter' variable, and then log it's value to the console. If unsure how, google "How to increment number javascript".
-4) Call the function 5 times to make the count increase by 5.
+    // Add 1 to the counter
+    counter++;
+    
+    console.log(counter);
+}
 
-*/
+//processCounter(); // Call the function
+
+// Function With Parameters
+
+function processCounterParameters(addition, division) {
+
+    console.log("Adding", addition);
+    console.log("Dividing", division)
+
+    // Add 5 to the counter
+    counter = counter + addition;
+    // Divide that by 2 
+    counter = counter / division;
+    console.log("Counter With Parameters:", counter);
+}
+
+processCounterParameters(5, 2); // Call the function
+processCounterParameters(10, 3); // Call the function
